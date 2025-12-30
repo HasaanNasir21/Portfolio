@@ -1,0 +1,19 @@
+# Commands to run after creating the GitHub repository
+
+# 1. Verify your remote URL (should be updated already)
+git remote -v
+
+# 2. Push your code to GitHub
+git push -u origin main
+
+# 3. If you get authentication errors, you might need to set up authentication:
+# Option A: Use GitHub CLI (recommended)
+gh auth login
+
+# Option B: Use Personal Access Token
+# Go to GitHub Settings > Developer settings > Personal access tokens
+# Generate a new token with repo permissions
+# Use your username and the token as password when prompted
+
+# 4. Verify the push was successful
+git log --oneline -3
