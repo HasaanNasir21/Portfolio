@@ -1,0 +1,133 @@
+.about {
+  background: #1e293b;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.about-text {
+  text-align: left;
+}
+
+.about-description {
+  font-size: 1.1rem;
+  color: #cbd5e1;
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+}
+
+.about-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.stat {
+  text-align: center;
+  padding: 1.5rem;
+  background: #334155;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  border: 1px solid #475569;
+}
+
+.stat:hover {
+  transform: translateY(-5px);
+}
+
+.stat h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #3b82f6;
+  margin-bottom: 0.5rem;
+}
+
+.stat p {
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.service-card {
+  background: #334155;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  text-align: center;
+  border: 1px solid #475569;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(59, 130, 246, 0.3);
+}
+
+.service-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+  color: white;
+  border-radius: 50%;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.service-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #f1f5f9;
+  margin-bottom: 1rem;
+}
+
+.service-description {
+  color: #94a3b8;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+
+  .about-stats {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .service-card {
+    padding: 1.5rem;
+  }
+
+  .service-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+  }
+}
