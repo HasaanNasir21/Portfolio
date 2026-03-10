@@ -24,12 +24,6 @@ const Hero = () => {
   const { ref, inView } = useInView();
   const controls = useAnimation();
 
-  const roles = [
-    'Python Developer',
-    'Full Stack Developer', 
-    'Generative AI Engineer'
-  ];
-
   useEffect(() => {
     if (inView) {
       controls.start('animate');
@@ -37,6 +31,12 @@ const Hero = () => {
   }, [inView, controls]);
 
   useEffect(() => {
+    const roles = [
+      'Python Developer',
+      'Full Stack Developer', 
+      'Generative AI Engineer'
+    ];
+
     const handleTyping = () => {
       const current = loopNum % roles.length;
       const fullText = roles[current];
@@ -58,7 +58,7 @@ const Hero = () => {
 
     const timer = setTimeout(handleTyping, typingSpeed);
     return () => clearTimeout(timer);
-  }, [text, isDeleting, loopNum, typingSpeed, roles]);
+  }, [text, isDeleting, loopNum, typingSpeed]);
 
   const socialLinks = [
     { 
