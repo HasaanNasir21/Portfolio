@@ -5,43 +5,26 @@ import {
   Brain, 
   Database, 
   Server, 
-  Globe, 
-  Smartphone,
+  Globe,
   Zap,
-  GitBranch,
   Cloud,
-  Cpu,
   Bot,
-  Layers,
-  Terminal,
-  Workflow
+  Layers
 } from 'lucide-react';
 import { 
   SiPython, 
   SiDjango, 
-  SiFastapi, 
-  SiMongodb, 
+  SiFastapi,
   SiMysql, 
   SiPostgresql,
   SiRedis,
   SiDocker,
-  SiKubernetes,
-  SiAmazonaws,
-  SiGooglecloud,
-  SiTensorflow,
-  SiPytorch,
   SiOpenai,
   SiReact,
   SiNextdotjs,
   SiTypescript,
-  SiTailwindcss,
   SiPostman,
-  SiGit,
-  SiLinux,
-  SiNginx,
-  SiElasticsearch,
-  SiGraphql,
-  SiSocketdotio
+  SiGit
 } from 'react-icons/si';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/Card';
 import { Badge } from './ui/Badge';
