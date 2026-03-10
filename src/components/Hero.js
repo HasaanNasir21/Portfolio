@@ -15,6 +15,7 @@ import { Button } from './ui/Button';
 import { Badge } from './ui/Badge';
 import { useInView } from '../hooks/useInView';
 import { fadeInUp, fadeInLeft, fadeInRight, staggerContainer } from '../lib/utils';
+import profilePhoto from '../assets/profile-photo.jpg';
 
 const Hero = () => {
   const [text, setText] = useState('');
@@ -273,7 +274,7 @@ const Hero = () => {
               >
                 <div className="w-full h-full rounded-full overflow-hidden border-4 border-gradient-to-r from-primary-500 to-secondary-500 p-1">
                   <img
-                    src="/profile-photo.jpg?v=1"
+                    src={profilePhoto}
                     alt="Muhammad Hasaan Nasir"
                     className="w-full h-full object-cover rounded-full"
                     onError={(e) => {

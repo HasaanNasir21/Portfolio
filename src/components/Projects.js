@@ -20,6 +20,20 @@ import { Card, CardContent, CardHeader, CardTitle } from './ui/Card';
 import { useInView } from '../hooks/useInView';
 import { useStore } from '../store/useStore';
 import { fadeInUp, staggerContainer } from '../lib/utils';
+import cashup1 from '../assets/project-images/cashup-1.png';
+import cashup2 from '../assets/project-images/cashup-2.png';
+import cashup3 from '../assets/project-images/cashup-3.png';
+import cashup4 from '../assets/project-images/cashup-4.png';
+import hotelPulse1 from '../assets/project-images/hotel-pulse-1.jpg';
+import hotelPulse2 from '../assets/project-images/hotel-pulse-2.jpg';
+import hotelPulse3 from '../assets/project-images/hotel-pulse-3.jpg';
+import accountech1 from '../assets/project-images/crm-accountech-1.jpg';
+import accountech2 from '../assets/project-images/crm-accountech-2.jpg';
+import accountech3 from '../assets/project-images/crm-accountech-3.jpg';
+import draftflow1 from '../assets/project-images/draftflow-1.jfif';
+import draftflow2 from '../assets/project-images/draftflow-2.jfif';
+import draftflow3 from '../assets/project-images/draftflow-3.jfif';
+import draftflow4 from '../assets/project-images/draftflow-4.jfif';
 
 const Projects = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState({});
@@ -40,7 +54,7 @@ const Projects = () => {
       title: 'CashUp - Full-Stack Payment Management Dashboard',
       description: 'Currently building a comprehensive payment management system with enterprise-grade authentication, role-based access control, and real-time analytics.',
       longDescription: 'CashUp is a full-stack payment management system featuring NestJS + TypeScript backend with GraphQL (Apollo Server), MySQL (MikroORM), and Redis. Frontend built with React 18 + Vite, Apollo Client, and Chart.js. Implements JWT authentication with refresh tokens and bcrypt password hashing. Features include role-based authorization (Admin, Moderator, User) with protected routes, GraphQL API with type-safe queries and mutations, real-time payment analytics with interactive charts, secure token management with automatic refresh, Redis-powered session caching, database migrations and seeding with MikroORM, and modern UI with gradient charts and dynamic visualizations. Current focus on modular NestJS backend architecture with guards and decorators, Context API for state management, protected GraphQL resolvers with role validation, automatic token expiration handling, and security best practices with CORS configuration. Working towards creating an intuitive analytics dashboard similar to Stripe\'s interface, with realistic transaction data visualization, revenue tracking, and profit analysis. Building with scalability and security as core priorities.',
-      images: ['/project-images/cashup-1.png', '/project-images/cashup-2.png', '/project-images/cashup-3.png', '/project-images/cashup-4.png'],
+      images: [cashup1, cashup2, cashup3, cashup4],
       technologies: ['NestJS', 'TypeScript', 'GraphQL', 'Apollo Server', 'MySQL', 'MikroORM', 'Redis', 'React 18', 'Vite', 'Apollo Client', 'Chart.js', 'JWT', 'bcrypt'],
       category: 'fullstack',
       github: 'https://github.com/HasaanNasir21/cashup',
@@ -58,7 +72,7 @@ const Projects = () => {
       title: 'HotelPulse - Performance Tracking Platform',
       description: 'A performance tracking and benchmarking platform built using Django for the backend and React for the frontend. Helps hotel owners and managers monitor daily performance and compare it with competitors effortlessly.',
       longDescription: 'HotelPulse is a comprehensive hotel performance tracking and benchmarking platform. Users register and input their daily hotel data — occupied rooms and room revenue. The system automatically calculates key performance metrics: MPI (Market Penetration Index), ARI (Average Rate Index), and RGI (Revenue Generation Index). Data is visualized through intuitive graphs that allow users to track performance trends daily, weekly, monthly, and yearly. Users can easily benchmark their hotel\'s performance against competitors and identify opportunities for growth. This project strengthened skills in full-stack development, data visualization, and creating user-centric dashboards, while building a tool that turns raw operational data into actionable insights for the hospitality industry.',
-      images: ['/project-images/hotel-pulse-1.jpg', '/project-images/hotel-pulse-2.jpg', '/project-images/hotel-pulse-3.jpg'],
+      images: [hotelPulse1, hotelPulse2, hotelPulse3],
       technologies: ['Python', 'Django', 'React', 'PostgreSQL', 'Chart.js', 'REST API'],
       category: 'fullstack',
       github: 'https://github.com/HasaanNasir21/hotel-pulse-project',
@@ -76,7 +90,7 @@ const Projects = () => {
       title: 'Accountech - AI-Powered Invoice Management',
       description: 'An AI-powered Invoice Management System that transforms raw invoice documents into structured, actionable data — eliminating manual data entry and reducing operational workload.',
       longDescription: 'Accountech is an AI-powered invoice management system that processes invoices automatically. Invoices are uploaded and processed via Google Cloud Vision OCR, OpenAI extracts structured data automatically, and a multilingual keyword engine classifies documents and matches them to the correct client. Data and files are stored securely in MySQL and Cloudinary. Key highlights include support for batch uploads of up to 50 invoices, handling 12+ currencies, requiring zero human intervention, and 158 keywords implemented in English & Spanish for accurate classification. Built with FastAPI backend, Next.js + TypeScript frontend, and integrating Celery + Redis for parallel processing and real-time progress tracking. This project deepened understanding of how OCR, large language models, and scalable backend systems can combine to deliver automation solutions that solve real business problems.',
-      images: ['/project-images/crm-accountech-1.jpg', '/project-images/crm-accountech-2.jpg', '/project-images/crm-accountech-3.jpg'],
+      images: [accountech1, accountech2, accountech3],
       technologies: ['FastAPI', 'Next.js', 'TypeScript', 'OpenAI', 'Google Cloud Vision', 'MySQL', 'Cloudinary', 'Celery', 'Redis'],
       category: 'ai',
       github: 'https://github.com/HasaanNasir21/crm-accountech',
@@ -94,7 +108,7 @@ const Projects = () => {
       title: 'DraftFlow - Legal-Tech AI Platform',
       description: 'A legal-tech platform with a focus on scalability, reliability, and production-grade architecture. Backend AI pipeline for automating complex legal workflows using LLMs, OCR, vector search, and backend orchestration.',
       longDescription: 'DraftFlow is a comprehensive legal-tech platform featuring LLM-powered intent detection & smart routing that classifies user requests (analyze, generate, query, or modify) using LLM-based classification with confidence scoring. The routing architecture dynamically directs each request to the appropriate service. The contract analysis engine provides clause-level analysis with risk assessment, ambiguity detection, and negotiation guidance, integrating OCR pipeline via Google Vision API for processing PDF, DOCX, and image uploads. Dynamic contract generation implements a human-in-the-loop system where the LLM determines required fields based on contract type (NDA, employment, franchise agreements, etc.), asks contextual follow-up questions, and generates tailored drafts. Conversational contract interaction uses RAG-based Q&A system with Pinecone for vector search and LangChain for orchestration, ensuring accurate reference resolution and preventing cross-contract contamination during multi-document sessions. Tech stack includes Python, FastAPI, LangChain, Pinecone, OpenRouter, Redis, Firebase, and Google Vision API. Working on this project as part of a collaborative team significantly strengthened expertise in applied LLM systems, prompt engineering, vector indexing, retrieval optimization, context isolation, and backend performance tuning.',
-      images: ['/project-images/draftflow-1.jfif', '/project-images/draftflow-2.jfif', '/project-images/draftflow-3.jfif', '/project-images/draftflow-4.jfif'],
+      images: [draftflow1, draftflow2, draftflow3, draftflow4],
       technologies: ['Python', 'FastAPI', 'LangChain', 'Pinecone', 'OpenRouter', 'Redis', 'Firebase', 'Google Vision API', 'RAG'],
       category: 'ai',
       github: 'https://github.com/HasaanNasir21/draftflow-io',
@@ -152,7 +166,7 @@ const Projects = () => {
           {/* Project Image */}
           <div className="relative h-64 overflow-hidden">
             <img 
-              src={`${currentImage}?v=1`}
+              src={currentImage}
               alt={project.title}
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               onError={(e) => {
