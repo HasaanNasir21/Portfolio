@@ -64,27 +64,27 @@ const About = () => {
   const stats = [
     { 
       icon: Award, 
-      value: '50+', 
+      value: '5+', 
       label: 'Projects Completed',
       description: 'Successfully delivered projects across various domains'
     },
     { 
       icon: Calendar, 
-      value: '3+', 
+      value: '1+', 
       label: 'Years Experience',
       description: 'Professional development experience'
     },
     { 
       icon: Users, 
-      value: '25+', 
+      value: '4+', 
       label: 'Happy Clients',
       description: 'Satisfied clients worldwide'
     },
     { 
       icon: Target, 
-      value: '98%', 
-      label: 'Success Rate',
-      description: 'Project completion and client satisfaction'
+      value: '1', 
+      label: 'AI Projects',
+      description: 'AI/ML integrated applications'
     }
   ];
 
@@ -149,36 +149,32 @@ const About = () => {
           >
             <div className="space-y-6">
               <h3 className="text-2xl font-bold text-white">
-                Engineering Intelligence Through Code
+                Building Scalable & Intelligent Solutions
               </h3>
               
               <div className="space-y-4 text-dark-300 leading-relaxed">
                 <p>
-                  I'm a <span className="text-primary-400 font-semibold">Senior Python Architect</span> and 
-                  <span className="text-secondary-400 font-semibold"> AI Systems Engineer</span> with 3+ years of experience 
-                  designing and implementing enterprise-grade intelligent applications. My expertise lies in 
-                  <span className="text-primary-400"> machine learning orchestration</span>, 
-                  <span className="text-secondary-400"> generative AI integration</span>, and 
-                  <span className="text-primary-400"> high-performance backend systems</span>.
+                  Results-driven Python Developer with strong experience in backend and full-stack web development. Skilled in building scalable, high-performance applications using <span className="text-primary-400 font-semibold">Python</span>, <span className="text-secondary-400 font-semibold">FastAPI</span>, and <span className="text-primary-400">Django</span>, with hands-on experience integrating modern AI frameworks like <span className="text-secondary-400">LangChain</span> to develop intelligent, data-driven solutions.
                 </p>
                 
                 <p>
-                  I specialize in building <span className="text-secondary-400 font-semibold">production-ready AI pipelines</span> using 
-                  advanced frameworks like <span className="text-primary-400">LangChain</span>, 
-                  <span className="text-secondary-400">OpenAI GPT models</span>, and 
-                  <span className="text-primary-400">vector databases</span>. My technical arsenal includes 
-                  <span className="text-secondary-400">FastAPI microservices</span>, 
-                  <span className="text-primary-400">Django REST frameworks</span>, and 
-                  <span className="text-secondary-400">cloud-native architectures</span> on AWS and GCP.
+                  I specialize in designing clean <span className="text-primary-400 font-semibold">RESTful APIs</span>, optimizing backend architectures, and building secure, maintainable systems. On the frontend, I work with <span className="text-secondary-400">React</span> to create responsive, user-friendly interfaces—allowing me to deliver complete end-to-end full-stack solutions.
                 </p>
                 
                 <p>
-                  Beyond coding, I'm passionate about <span className="text-primary-400 font-semibold">emerging AI technologies</span>, 
-                  <span className="text-secondary-400"> open-source contributions</span>, and 
-                  <span className="text-primary-400"> knowledge sharing</span> within the developer ecosystem. 
-                  I believe in continuous innovation and staying at the forefront of 
-                  <span className="text-secondary-400">AI/ML advancements</span> and 
-                  <span className="text-primary-400">software engineering excellence</span>.
+                  <span className="text-white font-semibold">Core Expertise:</span>
+                </p>
+                
+                <ul className="space-y-2 ml-4">
+                  <li><span className="text-primary-400">•</span> <span className="text-white font-medium">Backend Development:</span> Python, FastAPI, Django</li>
+                  <li><span className="text-secondary-400">•</span> <span className="text-white font-medium">Full Stack Development:</span> React, REST APIs</li>
+                  <li><span className="text-primary-400">•</span> <span className="text-white font-medium">AI Integration:</span> LangChain, LLM-based applications</li>
+                  <li><span className="text-secondary-400">•</span> <span className="text-white font-medium">Database Management & API Optimization</span></li>
+                  <li><span className="text-primary-400">•</span> <span className="text-white font-medium">Scalable System Design & Performance Tuning</span></li>
+                </ul>
+                
+                <p>
+                  I'm passionate about writing clean, efficient code and building solutions that solve real-world problems. Always eager to learn new technologies and contribute to impactful projects.
                 </p>
               </div>
             </div>

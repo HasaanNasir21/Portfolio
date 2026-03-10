@@ -101,7 +101,7 @@ const Contact = () => {
     {
       icon: Linkedin,
       label: 'LinkedIn',
-      href: 'https://www.linkedin.com/in/hasaan-nasir-658742353/',
+      href: 'https://www.linkedin.com/in/muhammad-hasaan-nasir-658742353?utm_source=share_via&utm_content=profile&utm_medium=member_android',
       color: 'hover:text-blue-400'
     },
     {

@@ -63,92 +63,93 @@ const Skills = () => {
 
   const skillCategories = [
     {
-      title: 'AI/ML & Intelligent Systems',
-      icon: Brain,
-      color: 'from-purple-500 to-pink-500',
-      skills: [
-        { name: 'Large Language Models (LLMs)', icon: SiOpenai, level: 95, description: 'GPT-4, Claude, Llama fine-tuning' },
-        { name: 'LangChain Orchestration', icon: Bot, level: 92, description: 'Advanced AI workflow automation' },
-        { name: 'TensorFlow & Keras', icon: SiTensorflow, level: 88, description: 'Deep learning model development' },
-        { name: 'PyTorch & Lightning', icon: SiPytorch, level: 85, description: 'Research-grade neural networks' },
-        { name: 'Generative AI Systems', icon: Bot, level: 94, description: 'Text, image, code generation pipelines' },
-        { name: 'Vector Database Engineering', icon: Database, level: 90, description: 'Pinecone, Weaviate, Chroma optimization' }
-      ]
-    },
-    {
-      title: 'Backend & Systems Engineering',
+      title: 'Backend Development',
       icon: Server,
       color: 'from-blue-500 to-cyan-500',
       skills: [
-        { name: 'Python Architecture', icon: SiPython, level: 98, description: 'Advanced OOP, async programming' },
-        { name: 'FastAPI Microservices', icon: SiFastapi, level: 96, description: 'High-performance async APIs' },
-        { name: 'Django Enterprise', icon: SiDjango, level: 92, description: 'Scalable web applications' },
-        { name: 'GraphQL Federation', icon: SiGraphql, level: 87, description: 'Distributed API architecture' },
-        { name: 'WebSocket Real-time', icon: SiSocketdotio, level: 84, description: 'Live data streaming systems' },
-        { name: 'Microservices Architecture', icon: Layers, level: 90, description: 'Distributed system design patterns' }
+        { name: 'Python Programming', icon: SiPython, level: 95, description: 'Core language expertise' },
+        { name: 'Django REST Framework', icon: SiDjango, level: 90, description: 'RESTful API development' },
+        { name: 'FastAPI Framework', icon: SiFastapi, level: 92, description: 'High-performance async APIs' },
+        { name: 'RESTful API Design', icon: Zap, level: 88, description: 'API architecture & best practices' },
+        { name: 'Authentication & Authorization', icon: Server, level: 85, description: 'Security implementation' },
+        { name: 'Postman Testing', icon: SiPostman, level: 87, description: 'API testing & documentation' }
       ]
     },
     {
-      title: 'Database & Data Engineering',
-      icon: Database,
-      color: 'from-green-500 to-emerald-500',
-      skills: [
-        { name: 'PostgreSQL Advanced', icon: SiPostgresql, level: 92, description: 'Complex queries, optimization, partitioning' },
-        { name: 'MongoDB Aggregation', icon: SiMongodb, level: 89, description: 'Document modeling, indexing strategies' },
-        { name: 'MySQL Performance', icon: SiMysql, level: 87, description: 'Query optimization, replication' },
-        { name: 'Redis Caching', icon: SiRedis, level: 85, description: 'Advanced caching patterns, pub/sub' },
-        { name: 'Elasticsearch Analytics', icon: SiElasticsearch, level: 82, description: 'Full-text search, log analysis' },
-        { name: 'Vector Databases', icon: Database, level: 88, description: 'Similarity search, embeddings storage' }
-      ]
-    },
-    {
-      title: 'Cloud & DevOps Engineering',
-      icon: Cloud,
-      color: 'from-orange-500 to-red-500',
-      skills: [
-        { name: 'AWS Cloud Architecture', icon: SiAmazonaws, level: 90, description: 'EC2, Lambda, RDS, S3, CloudFormation' },
-        { name: 'Google Cloud Platform', icon: SiGooglecloud, level: 84, description: 'GKE, Cloud Functions, BigQuery' },
-        { name: 'Docker Containerization', icon: SiDocker, level: 92, description: 'Multi-stage builds, optimization' },
-        { name: 'Kubernetes Orchestration', icon: SiKubernetes, level: 78, description: 'Pod management, service mesh' },
-        { name: 'Linux System Administration', icon: SiLinux, level: 87, description: 'Server hardening, automation' },
-        { name: 'Nginx Load Balancing', icon: SiNginx, level: 83, description: 'Reverse proxy, SSL termination' }
-      ]
-    },
-    {
-      title: 'Frontend & User Experience',
+      title: 'Frontend Development',
       icon: Globe,
       color: 'from-indigo-500 to-purple-500',
       skills: [
-        { name: 'React Ecosystem', icon: SiReact, level: 90, description: 'Hooks, Context, Performance optimization' },
-        { name: 'Next.js Full-Stack', icon: SiNextdotjs, level: 87, description: 'SSR, API routes, deployment' },
-        { name: 'TypeScript Advanced', icon: SiTypescript, level: 85, description: 'Type safety, generics, decorators' },
-        { name: 'Tailwind CSS Mastery', icon: SiTailwindcss, level: 93, description: 'Custom components, responsive design' },
-        { name: 'Flutter Cross-Platform', icon: Smartphone, level: 80, description: 'Mobile app development' },
-        { name: 'Progressive Web Apps', icon: Globe, level: 82, description: 'Service workers, offline capabilities' }
+        { name: 'React.js Framework', icon: SiReact, level: 88, description: 'Modern UI development' },
+        { name: 'Next.js Framework', icon: SiNextdotjs, level: 82, description: 'Full-stack React framework' },
+        { name: 'Web Development', icon: Globe, level: 90, description: 'Responsive web applications' },
+        { name: 'TypeScript', icon: SiTypescript, level: 80, description: 'Type-safe JavaScript' }
       ]
     },
     {
-      title: 'Development & Integration Tools',
-      icon: Workflow,
+      title: 'AI & Machine Learning',
+      icon: Brain,
+      color: 'from-purple-500 to-pink-500',
+      skills: [
+        { name: 'Generative AI', icon: SiOpenai, level: 85, description: 'AI-powered applications' },
+        { name: 'LangChain Framework', icon: Bot, level: 88, description: 'LLM application development' },
+        { name: 'Large Language Models', icon: Bot, level: 82, description: 'LLM integration & fine-tuning' }
+      ]
+    },
+    {
+      title: 'Database Management',
+      icon: Database,
+      color: 'from-green-500 to-emerald-500',
+      skills: [
+        { name: 'MySQL Database', icon: SiMysql, level: 87, description: 'Relational database design' },
+        { name: 'PostgreSQL', icon: SiPostgresql, level: 90, description: 'Advanced SQL database' },
+        { name: 'Vector Databases', icon: Database, level: 80, description: 'AI embeddings storage' },
+        { name: 'Firebase', icon: Database, level: 75, description: 'Real-time database' },
+        { name: 'Redis', icon: SiRedis, level: 78, description: 'Caching & session management' }
+      ]
+    },
+    {
+      title: 'DevOps & Deployment',
+      icon: Cloud,
+      color: 'from-orange-500 to-red-500',
+      skills: [
+        { name: 'Docker', icon: SiDocker, level: 85, description: 'Containerization' },
+        { name: 'Git Version Control', icon: SiGit, level: 92, description: 'Source code management' },
+        { name: 'Deployment', icon: Cloud, level: 83, description: 'Application deployment' }
+      ]
+    },
+    {
+      title: 'Backend Frameworks',
+      icon: Layers,
       color: 'from-teal-500 to-blue-500',
       skills: [
-        { name: 'Git Advanced Workflows', icon: SiGit, level: 94, description: 'Branching strategies, CI/CD integration' },
-        { name: 'API Testing & Documentation', icon: SiPostman, level: 90, description: 'Automated testing, OpenAPI specs' },
-        { name: 'CI/CD Pipeline Engineering', icon: GitBranch, level: 87, description: 'GitHub Actions, Jenkins automation' },
-        { name: 'Terminal & Shell Scripting', icon: Terminal, level: 92, description: 'Bash, PowerShell automation' },
-        { name: 'RESTful API Design', icon: Zap, level: 95, description: 'OpenAPI, versioning, rate limiting' },
-        { name: 'Performance Optimization', icon: Cpu, level: 88, description: 'Profiling, caching, load testing' }
+        { name: 'NestJS Framework', icon: Server, level: 75, description: 'Node.js backend framework' }
       ]
     }
   ];
 
   const certifications = [
-    'AWS Certified Solutions Architect',
-    'Google Cloud Professional Developer',
-    'MongoDB Certified Developer Associate',
-    'OpenAI API Specialist Certification',
-    'LangChain Advanced Practitioner',
-    'Docker Certified Associate Professional'
+    'Python Programming',
+    'Django REST Framework',
+    'FastAPI Framework',
+    'React.js Development',
+    'MySQL Database',
+    'PostgreSQL',
+    'Generative AI',
+    'LangChain Framework',
+    'Web Development',
+    'Deployment',
+    'Large Language Models',
+    'Vector Databases',
+    'Firebase',
+    'Docker',
+    'Git',
+    'Redis',
+    'Authentication & Authorization',
+    'Next.js',
+    'NestJS Framework',
+    'RESTful API',
+    'Postman Testing'
   ];
 
   const SkillBar = ({ skill, index, categoryIndex }) => (
@@ -250,7 +251,7 @@ const Skills = () => {
           animate={controls}
         >
           <h3 className="text-2xl font-bold text-white mb-8">
-            Professional <span className="gradient-text">Certifications & Expertise</span>
+            Professional <span className="gradient-text">Skills & Technologies</span>
           </h3>
           <div className="flex flex-wrap justify-center gap-3 mb-8">
             {certifications.map((cert, index) => (
@@ -274,10 +275,10 @@ const Skills = () => {
             animate={controls}
           >
             {[
-              { label: 'Years of Professional Experience', value: '3+' },
-              { label: 'Advanced Technologies Mastered', value: '35+' },
-              { label: 'Production AI Models Deployed', value: '25+' },
-              { label: 'Enterprise APIs Architected', value: '150+' }
+              { label: 'Years of Experience', value: '1+' },
+              { label: 'Technologies Mastered', value: '20+' },
+              { label: 'AI Projects Deployed', value: '1' },
+              { label: 'APIs Architected', value: '10+' }
             ].map((stat, index) => (
               <motion.div
                 key={stat.label}

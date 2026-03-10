@@ -25,12 +25,9 @@ const Hero = () => {
   const controls = useAnimation();
 
   const roles = [
-    'Full-Stack Python Architect',
-    'AI/ML Solutions Engineer', 
-    'Backend Systems Specialist',
-    'LLM Integration Expert',
-    'Cloud-Native Developer',
-    'API Design Architect'
+    'Python Developer',
+    'Full Stack Developer', 
+    'Generative AI Engineer'
   ];
 
   useEffect(() => {
@@ -72,7 +69,7 @@ const Hero = () => {
     },
     { 
       icon: Linkedin, 
-      href: 'https://www.linkedin.com/in/hasaan-nasir-658742353/', 
+      href: 'https://www.linkedin.com/in/muhammad-hasaan-nasir-658742353?utm_source=share_via&utm_content=profile&utm_medium=member_android', 
       label: 'LinkedIn',
       color: 'hover:text-blue-400'
     },
@@ -85,9 +82,9 @@ const Hero = () => {
   ];
 
   const stats = [
-    { label: 'Years Experience', value: '3+', icon: Code2 },
-    { label: 'Projects Completed', value: '50+', icon: Zap },
-    { label: 'AI Models Integrated', value: '15+', icon: Brain },
+    { label: 'Years Experience', value: '1+', icon: Code2 },
+    { label: 'Projects Completed', value: '5+', icon: Zap },
+    { label: 'AI Projects Integrated', value: '1', icon: Brain },
   ];
 
   const floatingElements = Array.from({ length: 6 }, (_, i) => (
@@ -114,7 +111,7 @@ const Hero = () => {
     <section 
       id="home"
       ref={ref}
-      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-dark-900 via-dark-800 to-dark-900"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-dark-900 via-dark-800 to-dark-900 pt-24 lg:pt-28"
     >
       {/* Animated Background */}
       <div className="absolute inset-0">
@@ -157,7 +154,7 @@ const Hero = () => {
                 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white text-shadow"
                 variants={fadeInUp}
               >
-                <span className="text-dark-300 font-light">Hello World! I'm</span>{' '}
+                <span className="text-dark-300 font-light">Hello! I'm</span>{' '}
                 <span className="gradient-text block mt-2">
                   Muhammad Hasaan Nasir
                 </span>
@@ -179,12 +176,7 @@ const Hero = () => {
               className="text-lg md:text-xl text-dark-300 max-w-2xl leading-relaxed"
               variants={fadeInUp}
             >
-              Crafting intelligent digital ecosystems with <span className="text-primary-400 font-semibold">Python</span> and 
-              <span className="text-secondary-400 font-semibold"> AI/ML</span>. I architect scalable solutions using 
-              cutting-edge technologies like <span className="text-primary-400">LangChain</span>, 
-              <span className="text-secondary-400"> FastAPI</span>, and 
-              <span className="text-primary-400"> Generative AI</span> to transform complex business challenges 
-              into elegant, high-performance applications.
+              Python Backend Developer, Full-Stack Developer, and Generative AI Engineer specializing in building scalable and intelligent digital solutions. I develop high-performance applications using modern technologies such as <span className="text-primary-400 font-semibold">Python</span>, <span className="text-secondary-400 font-semibold">FastAPI</span>, <span className="text-primary-400">LangChain</span>, and <span className="text-secondary-400">AI/ML</span>, transforming complex business challenges into efficient, user-focused systems.
             </motion.p>
 
             {/* Stats */}

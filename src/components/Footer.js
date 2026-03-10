@@ -39,12 +39,12 @@ const Footer = () => {
   ];
 
   const services = [
-    'AI/ML Systems Architecture',
-    'Enterprise Backend Engineering',
-    'Microservices & API Development',
-    'Full-Stack Solution Design',
-    'Technical Architecture Consulting',
-    'Performance Optimization & Scaling'
+    'Backend Development',
+    'Full-Stack Development',
+    'AI Integration',
+    'RESTful API Development',
+    'Database Design',
+    'Web Application Development'
   ];
 
   const socialLinks = [
@@ -56,7 +56,7 @@ const Footer = () => {
     },
     {
       icon: Linkedin,
-      href: 'https://www.linkedin.com/in/hasaan-nasir-658742353/',
+      href: 'https://www.linkedin.com/in/muhammad-hasaan-nasir-658742353?utm_source=share_via&utm_content=profile&utm_medium=member_android',
       label: 'LinkedIn',
       color: 'hover:text-blue-400'
     },
@@ -117,19 +117,19 @@ const Footer = () => {
               </div>
               
               <p className="text-dark-300 leading-relaxed">
-                Engineering intelligent, enterprise-grade solutions with cutting-edge AI integration 
-                and scalable Python architectures. Transforming complex business challenges into 
-                elegant, high-performance applications.
+                Building scalable and intelligent digital solutions with modern technologies. 
+                Specializing in Python backend development, full-stack applications, and AI integration 
+                to transform complex business challenges into efficient, user-focused systems.
               </p>
 
               <div className="flex items-center space-x-2">
                 <Badge variant="outline" className="text-xs">
                   <Code className="w-3 h-3 mr-1" />
-                  Available for enterprise projects
+                  Available for projects
                 </Badge>
                 <Badge variant="outline" className="text-xs">
                   <Zap className="w-3 h-3 mr-1" />
-                  Global remote collaboration
+                  Remote collaboration
                 </Badge>
               </div>
 

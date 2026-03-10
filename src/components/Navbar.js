@@ -63,8 +63,8 @@ const Navbar = () => {
                 HN
               </div>
               <div className="hidden sm:block">
-                <div className="text-white font-bold text-lg">Hasaan Nasir</div>
-                <div className="text-primary-400 text-xs">Senior Python Architect & AI Engineer</div>
+                <div className="text-white font-bold text-lg">Muhammad Hasaan Nasir</div>
+                <div className="text-primary-400 text-xs">Python Developer, Full Stack Developer & AI Engineer</div>
               </div>
             </motion.div>
 
@@ -149,8 +149,8 @@ const Navbar = () => {
                       HN
                     </div>
                     <div>
-                      <div className="text-white font-semibold">Hasaan Nasir</div>
-                      <div className="text-primary-400 text-xs">Senior Python Architect</div>
+                      <div className="text-white font-semibold">Muhammad Hasaan Nasir</div>
+                      <div className="text-primary-400 text-xs">Python Developer, Full Stack Developer & AI Engineer</div>
                     </div>
                   </div>
                   <button
