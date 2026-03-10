@@ -16,6 +16,7 @@ import { Badge } from './ui/Badge';
 import { useInView } from '../hooks/useInView';
 import { fadeInUp, fadeInLeft, fadeInRight, staggerContainer } from '../lib/utils';
 import profilePhoto from '../assets/profile-photo.jpg';
+import resume from '../assets/resume.pdf';
 
 const Hero = () => {
   const [text, setText] = useState('');
@@ -219,7 +220,7 @@ const Hero = () => {
               <Button 
                 variant="secondary" 
                 size="lg"
-                onClick={() => window.open('/resume.pdf', '_blank')}
+                onClick={() => window.open(resume, '_blank')}
               >
                 <Download className="mr-2 w-4 h-4" />
                 Download Resume
