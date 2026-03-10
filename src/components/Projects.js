@@ -152,7 +152,7 @@ const Projects = () => {
           {/* Project Image */}
           <div className="relative h-64 overflow-hidden">
             <img 
-              src={currentImage} 
+              src={`${currentImage}?v=1`}
               alt={project.title}
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               onError={(e) => {
