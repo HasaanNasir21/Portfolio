@@ -36,8 +36,7 @@ const Hero = () => {
     const roles = [
       'Python Developer',
       'Full Stack Developer', 
-      'Generative AI Engineer',
-      'AWS DevOps Engineer'
+      'Generative AI Engineer'
     ];
 
     const handleTyping = () => {
