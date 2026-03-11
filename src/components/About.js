@@ -207,14 +207,7 @@ const About = () => {
               <Button 
                 variant="secondary" 
                 size="lg"
-                onClick={() => {
-                  const link = document.createElement('a');
-                  link.href = '/resume.pdf';
-                  link.download = 'resume.pdf';
-                  document.body.appendChild(link);
-                  link.click();
-                  document.body.removeChild(link);
-                }}
+                onClick={() => window.open('https://hasaannasir.vercel.app/resume.pdf', '_blank')}
               >
                 Download Resume
               </Button>

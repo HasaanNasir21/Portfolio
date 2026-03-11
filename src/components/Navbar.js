@@ -94,14 +94,7 @@ const Navbar = () => {
               <Button
                 variant="secondary"
                 size="sm"
-                onClick={() => {
-                  const link = document.createElement('a');
-                  link.href = '/resume.pdf';
-                  link.download = 'resume.pdf';
-                  document.body.appendChild(link);
-                  link.click();
-                  document.body.removeChild(link);
-                }}
+                onClick={() => window.open('https://hasaannasir.vercel.app/resume.pdf', '_blank')}
               >
                 <Download className="w-4 h-4 mr-2" />
                 Resume
@@ -200,12 +193,7 @@ const Navbar = () => {
                     variant="secondary"
                     className="w-full"
                     onClick={() => {
-                      const link = document.createElement('a');
-                      link.href = '/resume.pdf';
-                      link.download = 'resume.pdf';
-                      document.body.appendChild(link);
-                      link.click();
-                      document.body.removeChild(link);
+                      window.open('https://hasaannasir.vercel.app/resume.pdf', '_blank');
                       setMobileMenuOpen(false);
                     }}
                   >
