@@ -94,7 +94,14 @@ const Navbar = () => {
               <Button
                 variant="secondary"
                 size="sm"
-                onClick={() => window.open('/resume.pdf', '_blank')}
+                onClick={() => {
+                  const link = document.createElement('a');
+                  link.href = '/resume.pdf';
+                  link.download = 'resume.pdf';
+                  document.body.appendChild(link);
+                  link.click();
+                  document.body.removeChild(link);
+                }}
               >
                 <Download className="w-4 h-4 mr-2" />
                 Resume
@@ -193,7 +200,12 @@ const Navbar = () => {
                     variant="secondary"
                     className="w-full"
                     onClick={() => {
-                      window.open('/resume.pdf', '_blank');
+                      const link = document.createElement('a');
+                      link.href = '/resume.pdf';
+                      link.download = 'resume.pdf';
+                      document.body.appendChild(link);
+                      link.click();
+                      document.body.removeChild(link);
                       setMobileMenuOpen(false);
                     }}
                   >
