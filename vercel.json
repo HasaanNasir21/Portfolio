@@ -9,6 +9,10 @@
       }
     },
     {
+      "src": "/resume\\.pdf",
+      "dest": "/resume.pdf"
+    },
+    {
       "src": "/(.*)",
       "dest": "/index.html"
     }
