@@ -94,7 +94,7 @@ const Navbar = () => {
               <Button
                 variant="secondary"
                 size="sm"
-                onClick={() => window.open('https://hasaannasir.vercel.app/resume.pdf', '_blank')}
+                onClick={() => window.open(`${window.location.origin}/resume.pdf`, '_blank')}
               >
                 <Download className="w-4 h-4 mr-2" />
                 Resume
@@ -193,7 +193,7 @@ const Navbar = () => {
                     variant="secondary"
                     className="w-full"
                     onClick={() => {
-                      window.open('https://hasaannasir.vercel.app/resume.pdf', '_blank');
+                      window.open(`${window.location.origin}/resume.pdf`, '_blank');
                       setMobileMenuOpen(false);
                     }}
                   >

@@ -219,7 +219,7 @@ const Hero = () => {
               <Button 
                 variant="secondary" 
                 size="lg"
-                onClick={() => window.open('https://hasaannasir.vercel.app/resume.pdf', '_blank')}
+                onClick={() => window.open(`${window.location.origin}/resume.pdf`, '_blank')}
               >
                 <Download className="mr-2 w-4 h-4" />
                 Download Resume

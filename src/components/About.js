@@ -207,7 +207,7 @@ const About = () => {
               <Button 
                 variant="secondary" 
                 size="lg"
-                onClick={() => window.open('https://hasaannasir.vercel.app/resume.pdf', '_blank')}
+                onClick={() => window.open(`${window.location.origin}/resume.pdf`, '_blank')}
               >
                 Download Resume
               </Button>
