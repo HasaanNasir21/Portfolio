@@ -15,7 +15,7 @@ import { Button } from './ui/Button';
 import { Badge } from './ui/Badge';
 import { useInView } from '../hooks/useInView';
 import { fadeInUp, fadeInLeft, fadeInRight, staggerContainer } from '../lib/utils';
-import profilePhoto from '../assets/profile-photo.jpg';
+import profilePhoto from '../assets/profile-photo.png';
 
 const Hero = () => {
   const [text, setText] = useState('');
